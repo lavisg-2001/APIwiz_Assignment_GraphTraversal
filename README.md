@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project tackles the challenge of **complex graph traversal** using a directed graph that can branch out (diverge) and merge back (converge), much like a real-world workflow engine.
+This project focuses to solve the challenge of **complex graph traversal** using a directed graph that can branch out (diverge) and merge back (converge).
 
-Each node in the graph performs a simple job: **it prints its name**. But there’s a twist—nodes must follow a strict execution order:
+Each node in the graph performs a simple job: **it prints its name**. But the nodes must follow a strict execution order:
 - A node runs **only after all of its parent nodes** have completed.
 - If a node has **multiple children**, those children are executed **in parallel** using threads.
 - Every node is executed **once and only once**, even in complex graphs with shared children.
